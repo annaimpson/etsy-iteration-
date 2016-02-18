@@ -56,8 +56,19 @@ currencyCode();
 ////////////////////////
 ////////Wood////////////
 ///////////////////////
-
-
+function wood(){
+  var woodObject = "";
+  items.forEach(function(num){
+    num.materials.map(function(value){     //value=the elements in the material array
+    if(value == "wood"){
+      woodObject = num.title;
+      console.log(woodObject);
+      }
+    });
+  });
+  return woodObject;
+}
+wood();
 
 
 
