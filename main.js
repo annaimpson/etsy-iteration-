@@ -26,11 +26,46 @@ itemPriceAverage();
 /////////////////////////
 function itemsBetween(value){
 
-  return (value.price >= 14 && value.price <= 18);
+  return (value.price > 14 && value.price < 18);
 }
-console.log(items.filter(itemsBetween));
+console.log("Items that cost between $14.00 USD and $18.00 USD: " + items.filter(itemsBetween));
 /////////////////////////
 ////////////////////////
 ////////////////////////
+
+
+/////////////////////////
+////GBP Curreny Code////
+////////////////////////
+function currencyCode(){
+  var gbpCurrencyCode = "";
+    items.forEach(function(num){
+      if(num.currency_code == "GBP"){
+        gbpCurrencyCode = num.title + " " + num.price;
+      }
+    });
+    console.log(gbpCurrencyCode);
+    return gbpCurrencyCode;
+}
+currencyCode();
+//////////////////////////
+/////////////////////////
+/////////////////////////
+
+
+////////////////////////
+////////Wood////////////
+///////////////////////
+
+
+
+
+
+
+
+
+
+
+
 
 }());
