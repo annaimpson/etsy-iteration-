@@ -101,9 +101,18 @@ console.log(items.filter(eightOrMore));
 ////////Handmade////////
 ////////////////////////
 function handmadeItems(){
+  var final = 0;
+    items.forEach(function(num){
+      if(num.who_made === "i_did"){
+        final++;
+      }
+    });
+    console.log(final + " " + "were made by their sellers");
+    return final;
+  }
+  handmadeItems();
 
-  
-}
+
 
 
 
