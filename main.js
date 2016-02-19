@@ -62,14 +62,48 @@ function wood(){
     num.materials.map(function(value){     //value=the elements in the material array
     if(value == "wood"){
       woodObject = num.title;
-      console.log(woodObject);
+      // console.log(woodObject);
       }
     });
   });
   return woodObject;
 }
 wood();
+///////////////////////
+///////////////////////
+//////////////////////
 
+
+
+
+//////////////////////
+//////8 or more///////
+//////////////////////
+
+function eightOrMore(value){
+
+  if (value.materials.length > 8){
+    console.log(value.title);
+    value.materials.forEach(function(i){
+      console.log(i);
+    });
+  }
+}
+console.log(items.filter(eightOrMore));
+///////////////////
+///////////////////
+///////////////////
+
+
+
+
+////////////////////////
+////////Handmade////////
+////////////////////////
+function handmadeItems(){
+
+  
+}
 
 
 
